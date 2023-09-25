@@ -1,0 +1,55 @@
+#include <stdio.h> 
+// Enum 정의
+
+enum Days {
+
+    SUNDAY,
+
+    MONDAY,
+
+    TUESDAY,
+
+    WEDNESDAY,
+
+    THURSDAY,
+
+    FRIDAY,
+
+    SATURDAY
+
+};
+
+int main() {
+
+    enum Days today = WEDNESDAY;
+
+    switch (today) {
+
+        case SUNDAY:
+
+            printf("오늘은 일요일입니다.\n");
+
+            break;
+
+        case MONDAY:
+
+            printf("오늘은 월요일입니다.\n");
+
+            break;
+
+        case WEDNESDAY:
+
+            printf("오늘은 수요일입니다.\n");
+
+            break;
+
+        default:
+
+            printf("그 외의 요일입니다.\n");
+
+    }
+    return 0;
+} 
+
+// Enum은 상수 집합을 정의하는 데 사용되는 데이터 형식입니다. 주로 코드를 읽기 쉽게 만들고, 매직 넘버를 피하고자 할 때 사용됩니다. 또한, 각 상수에는 연결된 정수 값이 있으며, 기본적으로 0부터 시작하여 순차적으로 증가합니다.
+예제에서, enum Days는 요일을 나타내는 상수 집합을 정의하고 today 변수를 사용하여 현재 요일을 저장하고 switch 문을 통해 해당하는 메시지를 출력합니다.
